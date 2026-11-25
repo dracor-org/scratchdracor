@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use scratchDraCor, please cite it as below."
+type: software
+title: "scratchDraCor"
+abstract: >-
+  scratchDraCor is a TurboWarp custom extension that brings the DraCor API
+  (https://dracor.org/api/v1) to Scratch-style blocks. It provides blocks for
+  corpora, plays, characters, spoken text and network metrics, and resolves
+  DraCor play IDs.
+authors:
+  - family-names: "Börner"
+    given-names: "Ingo"
+    orcid: "https://orcid.org/0000-0001-8294-2541"
+repository-code: "https://github.com/dracor-org/scratchdracor"
+url: "https://dracor.org"
+license: MIT
+keywords:
+  - DraCor
+  - API
+  - Scratch
+  - TurboWarp
+  - education
+  - drama corpora
