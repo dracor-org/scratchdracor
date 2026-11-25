@@ -57,8 +57,8 @@ all you need for scratchDraCor:
 6. **Use variables and lists.** In **Variables** you can make variables and
    lists to collect answers, for example all character names of a play (see
    the example below).
-7. **Save your project.** Use **File > Save to your computer** (in Chrome and
-   Edge the item is called **Save as…**). You get an `.sb3` file. To continue later, open the link above and use **File > Load
+7. **Save your project.** Use **File > Save as…** (in some browsers the item
+   is called **Save to your computer**). You get an `.sb3` file. To continue later, open the link above and use **File > Load
    from your computer**. The project remembers that it uses scratchDraCor.
 8. **Open the example.** Download
    [`examples/emilia-galotti.sb3`](examples/emilia-galotti.sb3) and load it
