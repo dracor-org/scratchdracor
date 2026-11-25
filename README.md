@@ -22,6 +22,53 @@ say (join (title of play [ger] [lessing-emilia-galotti]) (join [ has ] (join (nu
 
 scratchDraCor was written by Ingo Börner with [Claude Code](https://claude.com/claude-code).
 
+## Quick start
+
+Open this link in a web browser (Chrome, Firefox, Edge or Safari, also on a
+tablet):
+
+<https://turbowarp.org/editor?extension=https://dracor-org.github.io/scratchdracor/scratchdracor.js>
+
+TurboWarp opens with the DraCor blocks already loaded. Nothing needs to be
+installed, and you do not need an account.
+
+## A short guide to TurboWarp
+
+TurboWarp looks and works like Scratch. If you have never used either, this is
+all you need for scratchDraCor:
+
+1. **Find the blocks.** The coloured circles on the far left are the block
+   categories. Click **DraCor** (the dark blue DraCor symbol at the bottom of
+   the list) to see the DraCor blocks.
+2. **Try a block.** Click on a round block in the palette, for example
+   `title of play [ger] [lessing-emilia-galotti]`. A bubble shows its answer
+   (`Emilia Galotti`). The first answer may take a moment, because the block
+   asks DraCor over the internet.
+3. **Change the inputs.** Click into the white fields of a block and type
+   another corpus or play name, e.g. `shake` and `hamlet`. You find these
+   names in the address of a play on dracor.org, e.g.
+   `https://dracor.org/shake/hamlet`.
+4. **Build a script.** Drag blocks from the palette into the large area in
+   the middle. Round DraCor blocks fit into the white fields of other blocks,
+   e.g. into `say [Hello!]` from the **Looks** category, or into `join [] []`
+   from **Operators**. Put `when green flag clicked` from **Events** on top.
+5. **Run it.** Click the green flag above the stage (top right). The sprite
+   on the stage says the answer.
+6. **Use variables and lists.** In **Variables** you can make variables and
+   lists to collect answers, for example all character names of a play (see
+   the example below).
+7. **Save your project.** Use **File > Save to your computer** (in Chrome and
+   Edge the item is called **Save as…**). You get an `.sb3` file. To continue later, open the link above and use **File > Load
+   from your computer**. The project remembers that it uses scratchDraCor.
+8. **Open the example.** Download
+   [`examples/emilia-galotti.sb3`](examples/emilia-galotti.sb3) and load it
+   with **File > Load from your computer**. Click the green flag: the sprite
+   finds out who speaks most in Lessing's *Emilia Galotti*.
+
+The menus may appear in your browser's language (e.g. **Datei > Von deinem
+Computer hochladen** in German). TurboWarp's own documentation is at
+<https://docs.turbowarp.org/>.
+
 ## Why TurboWarp and not Scratch?
 
 The official Scratch website (scratch.mit.edu) does not allow custom
@@ -57,7 +104,6 @@ already loaded, using TurboWarp's `extension` URL parameter:
 https://turbowarp.org/editor?extension=https://dracor-org.github.io/scratchdracor/scratchdracor.js
 ```
 
-(This address is an example; it works only once the file is published there.)
 
 ### Sandboxed or unsandboxed?
 
