@@ -19,18 +19,20 @@
 
   const API = 'https://dracor.org/api/v1';
 
-  // A neutral icon: a speech bubble with a small network of three nodes.
-  const ICON =
+  // The DraCor symbol (from dracor-org/dracor-frontend, public/favicon.svg),
+  // on a white disc for the category menu and in white on the blocks.
+  const DRACOR_PATH =
+    'M377.72,143A192.18,192.18,0,0,0,192,0H0V384H192A192.25,192.25,0,0,0,377.72,143ZM157.67,226.33a48.52,48.52,0,0,0,68.66,0c.69-.69,1.35-1.39,2-2.11A48.3,48.3,0,0,0,238,207.45H352.37a165.21,165.21,0,0,1-2.5,16.77A159.33,159.33,0,0,1,345.49,241C324.71,306,263.76,353.1,192,353.1H30.9V207.45H69.31A123.75,123.75,0,0,0,305.66,241H263.48a86.5,86.5,0,1,1,0-98h42.18A123.7,123.7,0,0,0,69.31,176.55H30.9V30.9H192c71.76,0,132.71,47.15,153.49,112.11a159.33,159.33,0,0,1,4.38,16.77,165.21,165.21,0,0,1,2.5,16.77H238a48.3,48.3,0,0,0-9.72-16.77c-.64-.72-1.3-1.42-2-2.11a48.55,48.55,0,0,0-68.66,68.66Z';
+  const svgIcon = (bg, fg) =>
     'data:image/svg+xml;base64,' +
     btoa(
-      '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">' +
-        '<path d="M6 6h28a3 3 0 0 1 3 3v17a3 3 0 0 1-3 3H17l-7 6v-6H6a3 3 0 0 1-3-3V9a3 3 0 0 1 3-3z" fill="#fff" stroke="#8f2f3a" stroke-width="2"/>' +
-        '<path d="M12 22L20 12L28 22Z" fill="none" stroke="#8f2f3a" stroke-width="2"/>' +
-        '<circle cx="20" cy="12" r="3.5" fill="#b03a48"/>' +
-        '<circle cx="12" cy="22" r="3.5" fill="#b03a48"/>' +
-        '<circle cx="28" cy="22" r="3.5" fill="#b03a48"/>' +
+      '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="-48 -48 480 480">' +
+        (bg ? '<circle cx="192" cy="192" r="236" fill="' + bg + '"/>' : '') +
+        '<path fill-rule="evenodd" fill="' + fg + '" d="' + DRACOR_PATH + '"/>' +
         '</svg>'
     );
+  const MENU_ICON = svgIcon('#ffffff', '#1F2448');
+  const BLOCK_ICON = svgIcon(null, '#ffffff');
 
   const METRICS = [
     'density',
@@ -234,8 +236,8 @@
         color1: '#b03a48',
         color2: '#8f2f3a',
         color3: '#6e242d',
-        menuIconURI: ICON,
-        blockIconURI: ICON,
+        menuIconURI: MENU_ICON,
+        blockIconURI: BLOCK_ICON,
         docsURI: 'https://github.com/dracor-org/scratchdracor',
         blocks: [
           { blockType: Scratch.BlockType.LABEL, text: 'Corpora' },
