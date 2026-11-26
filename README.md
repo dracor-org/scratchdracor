@@ -78,6 +78,34 @@ extensions written in JavaScript. Projects made there are normal `.sb3` files,
 but projects that use scratchDraCor only run in TurboWarp (or in the
 TurboWarp Packager), not on scratch.mit.edu.
 
+## Who runs TurboWarp? (Notes for schools)
+
+TurboWarp is open source (GPL-3.0, MPL-2.0 and MIT, depending on the part) and
+not affiliated with Scratch or MIT. Its
+[privacy policy](https://turbowarp.org/privacy.html) (as of 27 September 2025)
+describes it as "an open source project ran by volunteers"; it names no legal
+entity or country and has no imprint. The contact address is
+contact@turbowarp.org. According to the policy, TurboWarp collects little
+data: IP addresses only in case of abuse, anonymous view counts that can be
+switched off, and anonymous aggregated usage numbers. Where the servers are
+located is not stated.
+
+For use in schools, data protection officers usually want to know who is
+responsible for a service and where the data is processed. If turbowarp.org
+is not acceptable, there are two alternatives:
+
+- **TurboWarp Desktop** ([desktop.turbowarp.org](https://desktop.turbowarp.org/))
+  runs as an app on Windows, macOS and Linux. It can load scratchDraCor from a
+  file (choose **Files** in step 4 below).
+- **Your own copy of the editor.** The TurboWarp editor can be built from
+  [its source code](https://github.com/TurboWarp/scratch-gui) and hosted by a
+  school or institution
+  ([build instructions](https://docs.turbowarp.org/development/getting-started)).
+
+In every case, the DraCor blocks send their requests to the DraCor API at
+dracor.org, and the extension itself is loaded from GitHub Pages when you use
+the link above.
+
 ## Loading the extension in TurboWarp
 
 scratchDraCor is a single file, `scratchdracor.js`. It works **sandboxed**, so
